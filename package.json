@@ -1,5 +1,5 @@
 {
-  "name": "ra3d-broadcast-v3",
+  "name": "candra dm duyuru",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Candra#0008",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.5.3"
