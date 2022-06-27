@@ -3,10 +3,11 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 var prefix = "+"; //bot prefix gir kanka
-var statuses = [`Durum Gir`]; //bot durum gir kanka
+var statuses = [`Candra#0008`]; //bot durum gir kanka
 var timers = 2;
 const config = require("./config.json");
-const owners = [config.owner]; //botu yönetebilcek id gir kanka
+const owners = ["823168252778774579","989266266659360818"]; //botu yönetebilcek id gir kanka
+const id = ("856079329846755369"); // id gir
 
 client.on("ready", () => {
   console.log(`Giriş yapıldı : ${client.user.tag}`);
@@ -52,7 +53,7 @@ client.on("message", message => {
 });
 
 client.on("message", message => {
-  if (message.content.startsWith(prefix + "bc")) {
+  if (message.content.startsWith(prefix + "dmduyuru")) {
     if (!message.member.hasPermission("ADMINISTRATOR")) return;
 
     message.delete();
@@ -128,7 +129,7 @@ client.on("message", async message => {
         message.author.displayAvatarURL({ dynamic: true })
       )
       .setTitle(`Davet et`)
-      .setURL(`https://discord.com/api/oauth2/authorize?client_id=${config.id}&permissions=8&scope=bot`)
+      .setURL(`https://discord.com/api/oauth2/authorize?client_id=${id}&permissions=8&scope=bot`)
        .setTimestamp()
       .setFooter(
         message.author.username,
@@ -175,4 +176,4 @@ client.on("message", message => {
   }
 });
 
-client.login("ODU2MDc5MzI5ODQ2NzU1MzY5.GX3Yow.0joOX1nuN4UA64zOM_jgmYRBWqbgQx-B6hXsX4");
+client.login("token");
