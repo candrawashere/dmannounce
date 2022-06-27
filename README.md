@@ -4,6 +4,6 @@
 
 [Bot Nasıl Kurulur?](https://www.youtube.com/channel/UCbf1UDtDj9ASj7FuqvhK0gA)  
 
-*Tek yapmanız gereken cmdyi açıp `node index.js yazmanız yeterlidir bot açılacaktır
+*Tek yapmanız gereken cmdyi açıp `node index.js` yazmanız yeterlidir bot açılacaktır*
 
 
